@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to right, rgb(98, 0, 255) ,rgb(101, 59, 252), rgb(144, 78, 250) , rgb(168, 127, 245));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 code {
