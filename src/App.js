@@ -77,7 +77,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="minesweeper">
+      <div className="minesweeper" id="res-design">
         <h1> Minesweeper 💥</h1>
         <Header
           time={this.state.time}
