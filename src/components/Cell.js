@@ -1,5 +1,5 @@
 import React from "react";
-import Mine from '../asset/expl.png'
+import Mine from '../assets/expl.png'
 
 const Cell = props => {
   let cell = () => {

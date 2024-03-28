@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Retry from '../asset/retry.png';
-import Start from '../asset/red-dot.png';
+import Retry from '../assets/retry.png';
+import Start from '../assets/red-dot.png';
 
 
 
