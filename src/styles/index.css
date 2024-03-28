@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, rgb(98, 0, 255) ,rgb(101, 59, 252), rgb(144, 78, 250) , rgb(168, 127, 245));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+}
+.board-head {
+  background-image: linear-gradient(to right, yellow, blue, cyan);
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000; }
+  .board-head .reset,
+  .board-head .flag-count,
+  .board-head .timer {
+    width: 55px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .board-head .reset {
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+  }
+button .retry, .start {
+  border: none;
+}
+.retry-svg, .dot-svg{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.board {
+  width: 499px;
+  height: 499px;
+  border: 3px solid #000000;
+  background-color: antiquewhite;
+  border-bottom: 3px solid #000000;; }
+  .board .row {
+    display: flex;
+    height: 50px; }
+    .board .row:last-child {
+      border-bottom: none;
+      height: 50px; }
+    .board .row .cell {
+      border-right: 1px solid #000000;
+      width: 49px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #000000; }
+      .board .row .cell.open {
+        background-color: #d4d4d4; }
+        .board .row .cell.open:hover {
+          background-color: #d4d4d4; }
+      .board .row .cell:hover {
+        background-color: #eeeeee; }
+      .board .row .cell:last-child {
+        border-right: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+  html #root,
+  body #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html #root .minesweeper,
+    body #root .minesweeper {
+      background-image: linear-gradient(to right, yellow, blue, cyan);
+      display: flex;
+      flex-direction: column;
+      height: 592px; }
+      html #root .minesweeper h1,
+      body #root .minesweeper h1 {
+        color: white;
+        text-align: center;
+        border-left: 3px solid #000000;
+        border-top: 3px solid #000000;
+        border-right: 3px solid #000000; 
+      }
