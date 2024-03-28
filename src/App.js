@@ -9,7 +9,6 @@ class App extends Component {
     this.state = {
       gameStatus: "waiting",
       time: 0, 
-      flagCount: 10,
       openCells: 0,
       mines: 10,
       rows: 10,
@@ -62,10 +61,6 @@ class App extends Component {
     });
   };
 
-  changeFlagAmount = amount => {
-    this.setState({ flagCount: this.state.flagCount + amount });
-  };
-
   handleCellClick = () => {
     if (this.state.openCells === 0 && this.state.gameStatus !== "running") {
       this.setState(
@@ -86,7 +81,6 @@ class App extends Component {
         <h1> Minesweeper 💥</h1>
         <Header
           time={this.state.time}
-          flagsUsed={this.state.flagCount}
           reset={this.reset}
           status={this.state.gameStatus}
         />
